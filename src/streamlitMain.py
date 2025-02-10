@@ -102,10 +102,8 @@ def get_day_period():
     elif 18 <= current_hour < 24:
         return "Evening"
 
-assistant_baul_avatar_path = os.path.join(os.getcwd(), "materials", "baulRaga_avatar_3.png")
-assistant_baul_image_path = os.path.join(os.getcwd(), "materials", "baulRaga_image.jpeg")  # Correct path!
-dalle_path = os.path.join(os.getcwd(), "materials", "dalle.png")  # Correct path!
-
+assistant_baul_avatar_path = os.path.abspath(os.path.join(os.getcwd(), "materials", "baulRaga_avatar_3.png"))
+assistant_baul_image_path = os.path.abspath(os.path.join(os.getcwd(), "materials", "baulRaga_image.jpeg"))
 
 def restricted_agent_executor(query: dict):
     try:
