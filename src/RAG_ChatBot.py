@@ -41,7 +41,8 @@ class ChatBot:
         # Load and split documents (This is done ONCE during ChatBot instantiation)
         # pdf_path = os.path.join(os.getcwd(), "materials", "The_Bauls_of_Bengal.pdf")
         pdf_path = os.path.abspath(os.path.join(os.getcwd(), "materials", "The_Bauls_of_Bengal.pdf"))
-        loader = PyPDFLoader(pdf_path)  # Correct path!
+        print(f"PDF path: {pdf_path}")  # Print the path
+        loader = PyPDFLoader(pdf_path)
         documents = loader.load()
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=4)
         docs = text_splitter.split_documents(documents)
