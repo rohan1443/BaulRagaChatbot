@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc  # Compiled Python files
+venv/    # Virtual environment (if you're using one)
+.venv/ 
+.DS_Store # macOS Finder files
+.idea/ # IntelliJ IDEA files
+.vscode/ # VS Code files
+# Any other files or directories you want to exclude
